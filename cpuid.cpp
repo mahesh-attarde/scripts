@@ -16,7 +16,7 @@ int main() {
 
     unsigned int family = ((eax >> 8) & 0xF) + ((eax >> 20) & 0xFF);
     unsigned int model = ((eax >> 4) & 0xF) + ((eax >> 16) & 0xF);
-    printf("This CPU processor. %x %x\n", family, model);
+    printf("This CPU processor. hex family %x model %x\n", family, model);
 
     return 0;
 }
